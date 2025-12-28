@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-css-file="index">
+<head>
+  <meta charset="UTF-8">
+  <title>Not Playing</title>
+  <script src="scripts/theme.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script type="module" src="scripts/index.js"></script>
+
+<div class="content">
+  <div id="now-playing" onclick="updateNowPlaying()"></div>
+  <div class="item">
+    <div class="item-details" onclick="window.location.href = '/previous'">
+      <h3 class="link"><a href="/previous">Previously Played</a></h3>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-details" onclick="window.location.href = '/top-tracks'">
+      <h3 class="link"><a href="/top-tracks">Top Tracks</a></h3>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-details" onclick="window.location.href = '/top-artists'">
+      <h3 class="link"><a href="/top-artists">Top Artists</a></h3>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-details" onclick="window.location.href = '/saved-tracks'">
+      <h3 class="link"><a href="/saved-tracks">Saved Tracks</a></h3>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-details" onclick="window.location.href = '/profile'">
+      <h3 class="link"><a href="/profile">View Profile</a></h3>
+    </div>
+  </div>
+</div>
+<script type="module" src="scripts/now.js"></script>
+</body>
+</html>

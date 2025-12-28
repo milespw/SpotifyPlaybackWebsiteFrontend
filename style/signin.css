@@ -1,0 +1,36 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1db954, #1ed760);
+}
+
+button#spotifySignIn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #191414;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button#spotifySignIn:hover {
+    background-color: #1db954;
+    transform: scale(1.05);
+}
+
+button#spotifySignIn:active {
+    transform: scale(0.98);
+}
