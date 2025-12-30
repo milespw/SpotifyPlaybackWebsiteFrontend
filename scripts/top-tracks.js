@@ -4,7 +4,9 @@ import { mergeArtists } from "./merge-artists.js";
 window.onload = async function () {
     const accessToken = await getAccessToken();
 
-    fetch("/api/get/top/tracks", {
+    const params = new URLSearchParams(window.location.search);
+    const timeRange = params.get("time_range") ?? "short_term";
+    fetch(`/api/get/top/tracks?time_range=${timeRange}`, {
         method: "GET",
         headers: {
             "accessToken": accessToken
